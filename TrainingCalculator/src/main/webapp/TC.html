@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+  <title>Form Alignment</title>
+  <style>
+    .container {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .form-group {
+      flex: 2;
+      padding: 25px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 5px;
+      font-size: 20px;
+    }
+
+    .form-group input {
+      width: 80%;
+      padding: 10px;
+    }
+    
+    .form-group select {
+      width: 85%;
+      padding: 10px;
+    }
+    
+     .form-groups {
+      flex: 2;
+      padding: 25px;
+    }
+    .form-groups label {
+      display: block;
+      margin-bottom: 5px;
+      font-size: 20px;
+    }
+    
+   .form-groups input {
+      width: 39%;
+      padding: 10px;
+    }
+    
+    .form-groupend input{
+        width: 40%;
+      padding: 10px;
+    }
+    
+    
+  </style>
+</head>
+<body>
+<form action="calc" method="post">
+<center><h1>Training Calculator</h1></center>
+  <div class="container">
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input type="text" name="name" placeholder="name"  required>
+    </div>
+     <div class="form-group">
+      <label for="degree">Degree:</label>
+      <select name="degree"><option>select</option>
+                                            <option>BSc Computer Science</option>
+                                            <option>BSc IT</option>
+                                            <option>MSc Computer Science</option>   
+                                            <option>MSc IT</option>
+                                            <option>BCA Bachelor's in Computer Application</option>
+                                            <option>MCA Master of COmputer Application</option>
+                                            <option>BE-Bachelor of Engineering Any Branches</option></select>
+    </div>
+  </div>
+    
+    
+    
+    
+    <div class="container">
+    <div class="form-group">
+      <label for="yearOfPassing">Year of Passing:</label>
+      <input type="year" id="yearOfPassing" name="yearOfPassing" required>
+    </div>
+     <div class="form-group">
+      <label for="careerGap">Career Gap:</label>
+      <input type="careerGap" id="careerGap" name="careerGap" required>
+    </div>
+  </div>
+    
+    
+   
+     <div class="container">
+    <div class="form-group">
+      <label for="hoursSpentperDay">Hours Spentper Day:</label>
+      <input type="hoursSpentperDay" id="hoursSpentperDay" name="hoursSpentperDay" required>
+    </div>
+    <div class="form-group">
+      <label for="daysSpentperWeek">Days Spentper Week:</label>
+      <input type="daysSpentperWeek" id="daysSpentperWeek" name="daysSpentperWeek" required>
+    </div>
+  </div>
+    
+ 
+
+ <div class="container">
+    <div class="form-groups">
+      <label for="startingDate">Starting Date:</label>
+      <input type="date" id="startingDate" name="startingDate" required>
+</div>
+   </div>
+
+  <br><br>
+  <center>
+   <div class="form-groupend">
+      <input type="submit"  name="submit">
+    </div>
+ </center>
+ 
+</form>
+</body>
+</html>
